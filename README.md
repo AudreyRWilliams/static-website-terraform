@@ -36,7 +36,7 @@ From the terraform/ directory: <br>
 ## 6 - Verify the site
 - Open the `website_endpoint` Terraform output in your browser — you should see `index.html`.
 - If you visit a missing page, S3 should return `404.html`.
-## 7) GitHub / Codespaces notes (how to run from Codespace safely)
+## 7 - GitHub / Codespaces notes (how to run from Codespace safely)
 
 Do not commit AWS credentials to GitHub. Use one of:
 
