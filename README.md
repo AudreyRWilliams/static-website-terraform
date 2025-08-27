@@ -1,5 +1,5 @@
 # Deploy A Static Website Using Terraform
-This project will create an S3 bucket configured for static website hosting.  The site files will be uploaded via Terraform.
+This project will create an S3 bucket configured for static website hosting.  The site files will be uploaded via Terraform.  A bucket policy (like the IAM policy) allows the site to viewed by the pulic.  **AWS requires disabling S3 block public access for such a public website and adding a bucket policy.**
 ## 1 - Prerequites (on your machine or Codespace)
 - AWS account & access key (access key id + secret) with permission to create S3 buckets & policies.
 - Terraform installed (recommended v1.x). If you’re in a Codespace you can install Terraform with the official binary (or use the HashiCorp Codespace feature).
@@ -52,9 +52,9 @@ Open the Codespace, open a terminal.
 
 Install Terraform (if not preinstalled) — e.g. in Codespace terminal:
 
-curl -fsSL https://releases.hashicorp.com/terraform/1.5.0/terraform_1.5.0_linux_amd64.zip -o /tmp/tf.zip
+`curl -fsSL https://releases.hashicorp.com/terraform/1.5.0/terraform_1.5.0_linux_amd64.zip -o /tmp/tf.zip
 unzip /tmp/tf.zip -d /usr/local/bin
-terraform -v
+terraform -v`
 
 
 (Pick the appropriate Terraform release — you can also use tfenv.)
